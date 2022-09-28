@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+.footerSectionContainer{
+    padding: 60px 85px;
+    background-color: #F8F8F8;
+}
+
+
+
+.footerMainDisplay .cont1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 45px;
+    color: #282828;
+}
+
+.footerMainDisplay div img{
+    width: 50px;
+    height: 50px;
+    margin-right: 24px;
+}
+
+@media (max-width: 576px){
+    .footerSectionContainer{
+        padding: 35px 20px;
+    }
+    .footerMainDisplay .cont1{
+        font-size: 30px;
+        color: #282828;
+    }
+}
+
+/*  */
+.footerLinks{
+    max-width: 1080px;
+}
+
+.footerLinks ul li:first-child{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 16%;
+    padding-bottom: 10px;
+}
+
+@media (max-width: 991px){
+    .footerLinks{
+        justify-content: start !important;
+    }
+    .footerLinks .footersList{
+        margin-right: 30px;
+    }
+    .footerLinks ul li:first-child{
+        margin-top: 30px;
+    }
+}
+
+.footerLinks ul li:not(li:first-child){
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: 3px;
+    color: #282828AD;
+    padding-top: 5px;
+    cursor: pointer;
+}
+
+.footerLinks ul li:not(li:first-child):hover{
+    color: red;
+}
+
+@media (min-width: 1400px){
+    .footerLinks{
+        max-width: 1280px;
+    }
+}
+
+.footersList ul{
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.socialMediaLinks{
+    width: 24px;
+    height: 24px;
+    background-color: black;
+    position: relative;
+    border-radius: 50%;
+    margin-right: 3px;
+    cursor: pointer;
+}
+
+.socialMediaLinks i{
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-60%);
+}
+
+.btnStyle{
+    background-color: #203b50;
+    color: white;
+    text-align: start !important;
+    display: flex;
+    align-items: center;
+    padding: 10px 10px;
+    border-radius: 10px !important;
+}
+
+.btnStyle:hover{
+    background-color: #EE2E2B80;
+    transition: 0.4s;
+}
+
+.btnStyle div{
+    /* text-align: center; */
+    margin-left: 10px;
+}
+
+.btnStyle div p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 600;
+    font-size: 30px;
+    padding-top: 0px;
+    margin-top: 0px;
+    line-height: 16px;
+}

@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+
+.popularSection{
+    padding: 35px 85px;
+}
+
+@media (max-width: 576px){
+    .popularSection{
+        padding: 0px 20px;
+    }
+}
+
+.popularSection .locatilyCardContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+@media (max-width: 991px){
+    .popularSection .locatilyCardContainer{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+.popularSection .localityCard{
+    padding: 15px 20px;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+
+
+.popularSection h2{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 60px;
+}
+
+@media (max-width: 576px){
+    .popularSection h2{
+        font-size: 30px;
+        line-height: 36px;
+    }
+}
+
+.popularSection h2 span{
+    font-weight: 600;
+}
+
+.localityCard div h3{
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+@media (max-width: 576px){
+    .localityCard div h3{
+        font-size: 18px;
+    }
+}
+
+
+.localityCard1 div h3{
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    /* line-height: 30px; */
+}
+
+
+
+.localityCard div p{
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+    color: #282828B3;
+}
+
+
+
+.localityCard .iconRight{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 22px;
+}

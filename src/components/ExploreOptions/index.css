@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+.exploreOptionSection{
+    padding: 35px 85px;
+}
+
+
+.exploreOptionSection h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 60px;
+    color: #282828;
+}
+
+@media (max-width: 576px){
+    .exploreOptionSection{
+        padding: 35px 20px;
+    }
+    .exploreOptionSection h2{
+        font-size: 30px;
+        line-height: 36px;
+    }
+}
+
+
+.accordion-item{
+    border-radius: 15px !important;
+    overflow: hidden !important;
+    border: 0.8px solid #28282833 !important;
+}
+
+.accordion-item:not(:first-of-type){
+    border: 0.8px solid #28282833 !important;
+}
+
+.accordion-header button{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 22px;
+    padding: 10px 20px !important;
+}
+
+@media (max-width: 576px){
+    .accordion-header button{
+        font-size: 18px;
+    }
+}
+
+.accordion-body p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 30px;
+    color: #28282880;
+}
+
+@media (max-width: 576px){
+    .accordion-body p{
+        font-family: 'Poppins', sans-serif;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 30px;
+        color: #28282880;
+    }
+}

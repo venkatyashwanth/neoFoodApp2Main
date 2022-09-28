@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap");
+
+.HeaderBackground {
+  background-image: url("/public/media/header_bg.png");
+  background-size: cover;
+}
+
+.HeroContent {
+  margin-top: 165px;
+}
+
+.HeroTitle {
+  max-width: 470px;
+}
+
+.HeroTitle h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 65px;
+  color: white;
+  line-height: 98px;
+}
+
+.HeroTitle img {
+  width: 80px;
+  height: 80px;
+}
+
+
+
+.HeroTitle .textDesign {
+  color: red;
+}
+
+.HeroContent :nth-child(2) h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: white;
+  font-size: 36px;
+  line-height: 54px;
+  text-align: center;
+}
+
+@media (max-width: 576px){
+    .HeroContent {
+        margin-top: 80px;
+      }
+
+    .HeroTitle {
+        max-width: 280px;
+      }
+      
+    .HeroTitle h1 {
+        font-size: 34px;
+        color: white;
+        line-height: 98px;
+      }
+      .HeroTitle img {
+        width: 80px;
+        height: 80px;
+      }
+      .HeroContent :nth-child(2) h2 {
+        color: white;
+        font-size: 24px;
+        line-height: 24px;
+        margin-bottom: 40px;
+      }
+}
+
+.searchContainer {
+  padding: 10px 25px;
+  background-color: white;
+  max-width: 860px;
+  margin: auto;
+  margin-bottom: 54px;
+  border-radius: 10px;
+}
+
+.searchBarBox {
+  position: relative;
+  margin-left: 10px;
+}
+
+.searchBarBox i {
+  margin-left: 22px;
+}
+
+.searchBarBox::before {
+  position: absolute;
+  content: "";
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 2px;
+  height: 80%;
+  left: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@media (max-width: 768px) {
+    .searchBarBox {
+        position: relative;
+        margin-left: 0px;
+      }
+
+
+    .searchBarBox::before {
+        width: 0px;
+      }
+      .searchBarBox i {
+        margin-left: 0px;
+      }
+  }
+
+
+.searchBarBox input:focus {
+  box-shadow: none !important;
+  border: 0px;
+}
+
+.selectBox select {
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  background: white;
+  flex: 1;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  padding: 3px;
+}
+
+.selectBox select::-ms-expand {
+  display: none;
+}
+
+.selectBox {
+  position: relative;
+  display: flex;
+  width: 180px;
+  height: 3em;
+  line-height: 3;
+  background: #5c6664;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+    .selectBox {
+      max-width: 200px;
+    }
+  }
+
+.selectBox::after {
+  position: absolute;
+  content: "\25BC";
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 1em;
+  background: transparent;
+  cursor: pointer;
+  pointer-events: none;
+  transition: 0.25s all ease;
+}
+
+
+
+.selectBox:hover::after {
+  color: #ee2e2b;
+}

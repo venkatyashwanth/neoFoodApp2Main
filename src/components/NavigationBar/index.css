@@ -1,0 +1,28 @@
+.navigationItem{
+    position: fixed;
+    width: 100%;
+    padding: 10px 100px;
+    background-color: #00000033 !important;
+    z-index: 20;
+}
+
+.navigationItem:hover{
+    background-color: #EE2E2BCC !important;
+}
+
+.navigationItem a{
+    color: white !important;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 1px;
+    padding-left: 30px !important;
+}
+
+@media (max-width: 576px){
+    .navigationItem{
+        position: fixed;
+        width: 100%;
+        padding: 10px 0px;
+        background-color: transparent !important;
+    }
+}
