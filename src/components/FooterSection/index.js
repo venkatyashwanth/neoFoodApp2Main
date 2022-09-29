@@ -7,6 +7,9 @@ import { RiFacebookFill } from "react-icons/ri";
 import { BsApple } from "react-icons/bs";
 import googlePlay from "../../icons/googlePlaySvg.svg"
 
+import Dropdown from '../Dropdown'
+import LanguageDropdown from "../LangDropdown";
+
 const socialIcons = [
   {
     icon: <ImLinkedin2 />,
@@ -35,12 +38,15 @@ export const FooterSection = () => {
     <>
       <div className="footerSectionContainer">
         <div>
-          <div className="footerMainDisplay d-flex justify-content-between">
+          <div className="footerMainDisplay d-flex flex-column flex-lg-row justify-content-between">
             <div className="cont1">
-              <img src="./media/blackLogo.png" alt="logo" />
+              <img src="./media/blackLogo.png" alt="logo" className="logoNum"/>
               NOM-NOM
             </div>
-            <div className="divStyle"></div>
+            <div className="cont2">
+              <Dropdown/>
+              <LanguageDropdown/>
+            </div>
           </div>
           <div className="footerLinks d-flex justify-content-between flex-wrap mt-5">
             <div className="footersList">
@@ -103,7 +109,6 @@ export const FooterSection = () => {
                   </div>
                 </a>
                 <a href="#0" className="btn btnStyle mt-3">
-                  {/* <BsApple size={32}/> */}
                   <img height={24} src={googlePlay} alt="google" />
                   <div>
                     <span>GET IT ON</span>

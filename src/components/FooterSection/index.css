@@ -14,7 +14,19 @@
     color: #282828;
 }
 
-.footerMainDisplay div img{
+.footerMainDisplay .cont2{
+    display: flex;
+}
+
+@media (max-width: 576px){
+    .footerMainDisplay .cont2{
+        margin-top: 20px !important;
+    }
+}
+
+
+
+.footerMainDisplay div .logoNum{
     width: 50px;
     height: 50px;
     margin-right: 24px;
@@ -98,7 +110,7 @@
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%,-60%);
+    transform: translate(-50%,-50%);
 }
 
 .btnStyle{
